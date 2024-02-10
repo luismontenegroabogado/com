@@ -1,0 +1,528 @@
+/* Estilos generales */
+
+body {
+  font-family: 'Cabin', serif;
+  color: rgb(255, 255, 255);
+  margin: 0;
+  padding: 0;
+}
+
+  
+  header {
+    background-color: #00e9e9;
+    color: white;
+    text-align: center;
+    padding: 1em;
+  }
+  
+  
+  /* Estilos generales de las secciones */
+  section {
+    padding: 40px;
+  }
+  
+/* Estilos generales del encabezado */
+header {
+  background-color: #0f407c;
+  background-size: cover;
+  background-position: center;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 50px;
+}
+
+header h1 {
+  margin-bottom: 20px;
+}
+
+header p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}            
+
+/* Resto de tus estilos... */
+
+  
+  /* Estilos específicos para dispositivos móviles */
+  @media screen and (max-width: 768px) {
+    header {
+        padding: 15px;
+    }
+  
+    h1 {
+        font-size: 1.5em;
+    }
+  
+    p {
+        font-size: 1em;
+    }
+  }
+  
+  /* Estilos generales de la barra de navegación */
+  nav {
+    background-color: #000000;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  nav a:hover {
+    border-bottom: 2px solid #fff;
+  }
+  
+/* Estilos para hacer la barra de navegación responsive */
+@media screen and (max-width: 768px) {
+  nav {
+    display: flex;
+    flex-direction: row-reverse; /* Cambia la dirección a fila y coloca el botón al final */
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .menu-toggle {
+    order: 1; /* Mueve el botón de menú al final */
+    cursor: pointer;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    align-items: flex-end; /* Alinea los enlaces a la derecha */
+  }
+
+  nav a {
+    display: block;
+    padding: 10px;
+    text-align: right; /* Alinea el texto de los enlaces a la derecha */
+  }
+
+  .menu-toggle.active + ul {
+    display: flex;
+  }
+}
+
+
+  /* Estilos generales para títulos y párrafos */
+  h1, h2, p {
+    max-width: 100%;
+  }
+  
+  /* Ajusta el tamaño de la fuente según sea necesario para dispositivos móviles */
+  @media screen and (max-width: 768px) {
+    h1 {
+        font-size: 1.5em;
+    }
+    
+    h2 {
+        font-size: 1.2em;
+    }
+  
+    p {
+        font-size: 1em;
+    }
+  }
+  
+/* Estilos específicos para la sección de inicio */
+#home {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgb(25, 0, 255); /* Ajusta el grosor y color del borde */
+}
+
+.image-carousel {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden; /* Añadido para ocultar partes de la imagen que no quepan */
+}
+
+.carousel-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto; /* Centra la imagen horizontal y verticalmente */
+  width: auto; /* Ajustado para mantener la proporción original de la imagen */
+  max-width: 80%; /* Ajustado para reducir el ancho de la imagen al 80% del contenedor */
+  max-height: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.carousel-image.active {
+  opacity: 1;
+}
+
+/* Estilos generales para la sección 'Inicio' */
+/* Media query para dispositivos móviles */
+@media screen and (max-width: 768px) {
+  #home {
+      padding: 20px;
+      height: 300px;
+      overflow: hidden;
+      border: 1px solid rgb(0, 26, 255); /* Ajusta el grosor y color del borde para dispositivos móviles */
+  }
+
+  .carousel-image {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+      max-height: 300px;
+      position: relative;
+      left: 0; /* Ajusta la posición en dispositivos móviles */
+  }
+}
+
+/* Estilos para el carrusel */
+.image-carousel {
+  position: relative;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.carousel-image {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  opacity: 0;
+  transition: opacity 1s ease-in-out; /* Ajusta la duración y el tipo de transición según tu preferencia */
+}
+
+.active {
+  opacity: 1;
+}
+
+
+
+/* Estilos generales para la sección 'Acerca de mí' */
+#about {
+  background-color: #fdfdfd;
+  color: rgb(0, 0, 0);
+  text-align: center; /* Centra el contenido horizontalmente */
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center; /* Centra el contenido verticalmente */
+  align-items: center; /* Centra el contenido horizontalmente */
+}
+
+.about-container {
+  max-width: 800px; /* Ajusta el ancho máximo según tus preferencias */
+  padding: 20px;
+  position: relative;
+  z-index: 1;
+  background-color: rgb(255, 255, 255);
+  text-align: justify; /* Justifica el texto */
+}
+
+.about-text {
+  margin: 0 auto; /* Centra el contenedor horizontalmente */
+}
+
+.about-image {
+  max-width: 100%;
+  height: auto;
+  margin-top: 10px; /* Ajusta el margen superior */
+}
+
+/* Media query para dispositivos móviles */
+@media screen and (max-width: 768px) {
+  #about {
+    padding: 20px 10px;
+  }
+
+  .about-container {
+    max-width: 100%;
+    margin: 20px 10px; /* Ajusta los márgenes izquierdo y derecho para dispositivos móviles */
+  }
+}
+   
+.service {
+  
+  flex-basis: calc(30% - 20px);
+
+  margin: 20px;
+
+  padding: 20px;
+
+  border-radius: 8px;
+
+  background-color: #ffffff;
+
+  box-shadow: 0 0 15px rgb(0, 0, 0);
+
+  transition: transform 0.3s ease-in-out;
+
+}
+
+.service:hover {
+
+  transform: scale(1.05);
+
+}
+
+.service img {
+
+  max-width: 100%;
+
+  border-radius: 8px;
+
+  margin-bottom: 20px;
+
+}
+.service h3,
+
+.service p {
+
+  color: rgb(0, 0, 0);
+
+  margin-bottom: 10px;
+}
+
+/* Estilos específicos para la sección 'Nuestros Servicios' */
+#services {
+  background-color: #0f407c;
+  color: rgb(255, 255, 255);
+  padding: 80px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Alinea los elementos en el centro verticalmente */
+}
+
+/* Estilos para la lista de servicios */
+.services-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.service {
+  flex-basis: calc(30% - 40px); /* Reducir el ancho del contenedor en dispositivos grandes */
+  margin: 20px;
+  padding: 10px; /* Reducir el padding para que los cuadros sean más pequeños */
+  border-radius: 8px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 0 15px #13aae6;
+  transition: transform 0.3s ease-in-out;
+  max-width: 200px; /* Establecer un ancho máximo para el contenedor */
+}
+
+.service img {
+  max-width: 80%; /* Reducir el tamaño máximo de la imagen al 80% del contenedor */
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* Quitar el estilo de lista (punto) */
+.services-container {
+  list-style: none;
+  padding: 0;
+}
+
+/* Media query para dispositivos móviles */
+@media screen and (max-width: 768px) {
+  .service {
+    flex-basis: calc(100% - 20px); /* Ancho completo en dispositivos móviles */
+    margin: 10px;
+  }
+}
+
+  
+  
+  /* Estilos generales para la sección 'Testimonios' */
+  #testimonials {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 70px 0;
+  }
+  
+  .testimonial-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+  }
+  
+  .testimonial {
+    max-width: 300px;
+    text-align: left;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .testimonial img {
+    max-width: 100px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .testimonial-text {
+    flex: 1;
+  }
+  
+  .author {
+    margin-top: 10px;
+    font-style: italic;
+  }
+  
+  /* Estilos generales para la sección 'Preguntas Frecuentes' */
+  #faq {
+  background-color: #0f407c;
+  color: #005ce6;
+  }
+  
+  /* Estilos para preguntas y respuestas */
+  .question {
+  margin-bottom: 20px; /* Ajusta el espaciado entre preguntas */
+  }
+  
+  .toggle-btn {
+  display: block; /* Asegura que cada botón de pregunta esté en su propia línea */
+  width: 20px;
+  height: 20px;
+  background-color: #005ce6;
+  color: #ffffff;
+  text-align: center;
+  line-height: 20px;
+  font-weight: bold;
+  margin-bottom: 10px; /* Ajusta el espaciado entre el botón y la respuesta */
+  border-radius: 50%;
+  cursor: pointer;
+  }
+  
+  .answer {
+  display: none;
+  }
+  
+  /* Estilos cuando la respuesta está abierta */
+  .question.open .toggle-btn {
+  background-color: #ffffff;
+  color: #005ce6;
+  }
+  
+  .question.open .answer {
+  display: block;
+  }
+  
+  /* Estilos generales para la sección 'Contacto' */
+  
+  /* Sección Contacto */
+  
+  /* Estilo para el botón */
+  .contact-button {
+  display: inline-block;
+  background-color: rgb(0, 233, 241); /* Puedes ajustar el color de fondo según tu paleta de colores */
+  color: rgb(0, 0, 0);
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
+  
+  .contact-button:hover {
+  background-color: #000000; /* Cambia a un tono más oscuro al pasar el mouse */
+  color: #fff;
+  }
+  
+  
+  #contacto {
+  background-color: rgb(2, 92, 211); /* Amarillo/Naranja */
+  color: rgb(255, 255, 255);
+  text-align: center;
+  border-bottom: 1px solid rgb(0, 105, 241); /* Agregado un borde inferior */
+  }
+  
+  #contacto h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  }
+  
+  #formulario-contacto {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgb(0, 0, 0);
+  }
+  
+  #formulario-contacto label {
+  display: block;
+  margin-bottom: 8px;
+  text-align: left;
+  }
+  
+  #formulario-contacto input,
+  #formulario-contacto textarea {
+  width: calc(100% - 16px);
+  padding: 8px;
+  margin-bottom: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  }
+  
+  #formulario-contacto button {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1em;
+  }
+  
+  #formulario-contacto button:hover {
+  background-color: #2980b9;
+  }
+  
+  .whatsapp-button {
+    text-align: center;
+  }
+  
+  .whatsapp-button p {
+    margin-bottom: 10px;
+  }
+  
+  .whatsapp-link {
+    background-color: #25d366; /* Verde de WhatsApp */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
+  
+  .whatsapp-link:hover {
+    background-color: #128c7e; /* Cambiar a un tono más oscuro al pasar el mouse */
+    color: #fff;
+  }
+  
+  /* Estilos generales para el pie de página */
+  footer {
+    background-color: #000; /* Color del encabezado (rosa oscuro) */
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+  }
+  

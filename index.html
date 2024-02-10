@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <!-- Metaetiquetas -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Luis Montenegro - Abogado comprometido con la excelencia legal. Brindamos servicios legales personalizados y confiables.">
+  <meta name="keywords" content="abogado, derecho, servicios legales, defensor legal, Luis Montenegro">
+  <meta name="author" content="Luis Montenegro">
+  <meta name="robots" content="index, follow">
+  <!-- Enlace a la hoja de estilos externa -->
+  <link rel="stylesheet" href="styles.css">
+
+  <link rel="icon" href="Imagenes/office-2820890_1280.jpg" type="image/x-icon">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin:400,700&display=swap">
+
+
+
+  <!-- Título de la página -->
+  <title>Luis Montenegro</title>
+
+  <!-- Estilos en línea -->
+  <style>
+    /* Animación del encabezado */
+    @keyframes headerMovement {
+      0% {
+        transform: translateX(0);
+      }
+
+      50% {
+        transform: translateX(20px);
+      }
+
+      100% {
+        transform: translateX(0);
+      }
+    }
+
+    header h1 {
+      margin-bottom: 20px;
+      /* animation: headerMovement 5s infinite alternate; */
+    }
+
+    /* Animación del texto "Acerca de Nosotros" */
+    @keyframes aboutTextMovement {
+      0% {
+        transform: translateX(0);
+      }
+
+      50% {
+        transform: translateX(20px);
+      }
+
+      100% {
+        transform: translateX(0);
+      }
+    }
+
+    .about-text {
+      max-width: 600px;
+      margin: 20px;
+      padding: 20px;
+      position: relative;
+      z-index: 1;
+      animation: aboutTextMovement 5s infinite alternate; /* Aplica la animación al texto */
+    }
+
+     /* Desactivar la animación en dispositivos móviles y tabletas */
+     @media screen and (max-width: 768px) {}
+      .about-text {
+        animation: none; /* Desactivar la animación */
+      }
+
+    /* Estilos para pantallas pequeñas (dispositivos móviles) */
+    @media screen and (max-width: 768px) {
+      .about-text {
+        max-width: 100%; /* Ajusta el ancho según tus necesidades */
+        margin: 10px; /* Puedes ajustar el margen para dispositivos móviles */
+        padding: 10px; /* Puedes ajustar el padding para dispositivos móviles */
+        display: flex;
+        flex-direction: column; /* Cambia la dirección del diseño a column */
+      }
+    }
+
+    .about-container:hover .about-text {
+      transform: scale(1.1);
+    }
+
+    @media screen and (max-width: 768px) {
+      .testimonial-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .testimonial {
+        margin-bottom: 20px;
+      }
+
+      .testimonial img {
+        width: 100%; /* Ajusta el ancho de la imagen al 100% del contenedor */
+        max-width: 200px; /* Establece un máximo ancho para la imagen */
+        height: auto; /* Hace que la altura se ajuste automáticamente */
+      }
+
+      .testimonial-text {
+        font-size: 14px; /* Ajusta el tamaño de fuente según tus preferencias */
+        text-align: center;
+      }
+    }
+/* Estilos específicos para la sección de inicio */
+#home {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .image-carousel {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+  }
+
+  .carousel-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+
+  .carousel-image.active {
+    opacity: 1;
+  }
+
+  </style>
+</head>
+
+<body>
+  <!-- Encabezado -->
+<!-- Encabezado -->
+<header>
+  <h1>Luis Montenegro   -   Experiencia Legal Excepcional</h1>
+  <p>Defendiendo sus derechos con compromiso y excelencia legal. Descubra soluciones jurídicas confiables y personalizadas para sus necesidades.
+
+
+
+
+
+  </p>
+  <!-- Botón -->
+  <a href="#contacto" class="contact-button">Contáctame</a>
+</header>
+
+
+<nav>
+  <ul>
+    <li><a href="#home">Inicio</a></li>
+    <li><a href="#about">Acerca de mí</a></li>
+    <li><a href="#services">Mis Servicios</a></li>
+    <li><a href="#testimonials">Testimonios</a></li>
+    <li><a href="#faq">Preguntas frecuentes</a></li>
+    <li><a href="#contacto">Contacto</a></li>
+  </ul>
+</nav>
+
+
+  <main>
+    <section id="home" class="section">
+      <div class="image-carousel">
+        <img class="carousel-image active" src="Imagenes/right-4703934_1280.jpg">
+        <img class="carousel-image" src="Imagenes/man-5806013_1280.jpg">
+        <img class="carousel-image" src="Imagenes/judge-3665164_1280.jpg">
+      </div>
+    </section>
+  </main>
+
+<!-- Sección Acerca de mí -->
+<section id="about" class="about-section">
+  <div class="about-text center-text" style="text-align: justify;">
+    <h2>Acerca de mí</h2>
+    <p>¡Saludos! Soy Luis Montenegro, un apasionado abogado con un firme compromiso hacia la excelencia legal y la defensa incansable de tus derechos. A lo largo de mi carrera, he cultivado una profunda comprensión de diversas áreas del derecho, permitiéndome ofrecer asesoramiento jurídico especializado y personalizado a mis clientes.</p>
+    <p>Desde el inicio de mi carrera, he tenido el privilegio de representar a individuos y empresas, abordando una amplia gama de desafíos legales. Mi enfoque no se limita simplemente a la resolución de casos; me esfuerzo por establecer una conexión significativa con mis clientes, entendiendo sus preocupaciones y objetivos para proporcionar soluciones legales efectivas y a medida.</p>
+    <p>Mi filosofía se basa en la transparencia, la integridad y la defensa apasionada de la justicia. Mi compromiso no se detiene en el tribunal; estoy aquí para guiar a mis clientes en cada paso del proceso legal, brindándoles la confianza y la orientación necesarias en momentos críticos.</p>
+    <p>Al elegirme como tu abogado, no solo obtienes un defensor legal experimentado, sino también un aliado comprometido con tu bienestar. Estoy dedicado a hacer que el complejo mundo legal sea comprensible para ti y a trabajar incansablemente para lograr los mejores resultados en tu caso. Confía en mi experiencia para ser la voz que te represente y la mano que te guíe hacia la resolución que buscas.</p>
+    <img class="about-image" src="Imagenes/office-2820890_1280.jpg" alt="Descripción de la imagen">
+  </div>
+</section>
+
+
+
+
+<section id="services" class="section">
+  <h2>Mis Servicios</h2>
+  <ul class="services-container">
+    <li class="service">
+      <img src="Imagenes/man-5806013_1280.jpg" alt="Derecho Civil:">
+      <h3>Derecho Civil:</h3>
+      <p>Resuelvo disputas y conflictos legales relacionados con contratos, responsabilidad civil, propiedad y más. Mi enfoque es encontrar soluciones eficaces y justas para proteger tus intereses.</p>
+    </li>
+    <li class="service">
+      <img src="Imagenes/judge-3665164_1280.jpg" alt="Derecho Penal">
+      <h3>Derecho Penal</h3>
+      <p>Defiendo tus derechos en casos penales, asegurando una representación legal sólida. Desde delitos menores hasta casos más complejos, estoy aquí para garantizar que recibas una defensa justa y adecuada.</p>
+    </li>
+    <li class="service">
+      <img src="Imagenes/family-84865_1280.jpg" alt="Derecho de Familia">
+      <h3>Derecho de Familia</h3>
+      <p>Brindo apoyo en asuntos familiares, como divorcios, custodia de hijos y pensiones alimenticias. Mi objetivo es facilitar el proceso y proteger los mejores intereses de tu familia.</p>
+    </li>
+    <li class="service">
+      <img src="Imagenes/consulting-3031678_1280.jpg" alt="Asesoría Empresarial">
+      <h3>Asesoría Empresarial</h3>
+      <p>Ofrezco orientación legal a empresas en cuestiones comerciales, contratos, cumplimiento normativo y litigios. Mi enfoque proactivo ayuda a proteger los intereses comerciales de mis clientes.</p>
+    </li>
+  </ul>
+</section>
+
+<!-- Sección Testimonios -->
+<section id="testimonials" class="section">
+  <h2>Testimonios</h2>
+  <div class="testimonial-container">
+    <div class="testimonial">
+      <img src="Imagenes/imagen11.jpg" alt="Juan Perez">
+      <div class="testimonial-text">
+        <p>"Luis Montenegro es más que un abogado, es un verdadero defensor de sus clientes. En mi caso de divorcio, su enfoque compasivo y su experiencia fueron fundamentales. Supo guiar cada paso del proceso, brindándome confianza y resultados excepcionales. No podría haber elegido a un mejor abogado para proteger mis intereses y los de mi familia."</p>
+        <p>- Juan Perez</p>
+      </div>
+    </div>
+    <div class="testimonial">
+      <img src="Imagenes/imagen12.jpg" alt="María Sanchez">
+      <div class="testimonial-text">
+        <p>"Contratar a Luis Montenegro fue la mejor decisión que tomé para resolver mi caso penal. Su dedicación y habilidades legales fueron evidentes desde el principio. No solo me proporcionó una representación legal fuerte en la corte, sino que también se tomó el tiempo para explicar cada detalle y asegurarse de que estuviera informado y tranquilo en todo momento. Lo recomendaría sin dudarlo."</p>
+        <p>- María Sanchez</p>
+      </div>
+    </div>
+    <div class="testimonial">
+      <img src="Imagenes/imagen13.jpg" alt="Ana Rodríguez">
+      <div class="testimonial-text">
+        <p>"Luis Montenegro no solo es un abogado, sino un asesor legal integral. Su enfoque proactivo y su profundo conocimiento en asuntos comerciales fueron cruciales para mi empresa. Gracias a su asesoramiento preventivo, evitamos problemas legales y hemos establecido una relación de confianza a largo plazo. Sin duda, un profesional excepcional que se preocupa por el éxito de sus clientes."</p>
+        <p>- Ana Rodríguez</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Sección Preguntas Frecuentes -->
+<section id="faq" class="section">
+<h2>Preguntas Frecuentes</h2>
+<div class="faq-container">
+<div class="faq-item">
+  <div class="question">
+    <h3>¿Cuál es el primer paso en caso de enfrentar un problema legal?</h3>
+    <div class="toggle-btn">+</div>
+  </div>
+  <div class="answer">
+    <p>El primer paso es ponerse en contacto conmigo para una consulta inicial. Durante esta reunión, discutiremos los detalles de su situación legal, evaluaré sus opciones y le proporcionaré orientación sobre cómo proceder.</p>
+  </div>
+</div>
+
+<div class="faq-item">
+  <div class="question">
+    <h3>¿Cómo funciona el proceso de divorcio y cuál es mi papel como cliente?</h3>
+    <div class="toggle-btn">+</div>
+  </div>
+  <div class="answer">
+    <p>El proceso de divorcio varía según las circunstancias, pero como cliente, su papel implica proporcionar información detallada sobre sus activos, deudas y objetivos. Trabajaré para proteger sus intereses, facilitar la negociación y representarlo ante el tribunal cuando sea necesario.</p>
+  </div>
+</div>
+
+<div class="faq-item">
+  <div class="question">
+    <h3>¿Cómo puedo proteger los intereses legales de mi empresa?</h3>
+    <div class="toggle-btn">+</div>
+  </div>
+  <div class="answer">
+    <p>La protección de los intereses de su empresa comienza con una sólida asesoría legal. Ofrezco servicios de asesoría empresarial que abarcan desde la redacción de contratos hasta el cumplimiento normativo. Mi objetivo es ayudar a prevenir problemas legales y proporcionar soluciones efectivas cuando surgen desafíos.</p>
+  </div>
+</div>
+
+<div class="faq-item">
+  <div class="question">
+    <h3>¿Cuáles son mis derechos si enfrento cargos penales?</h3>
+    <div class="toggle-btn">+</div>
+  </div>
+  <div class="answer">
+    <p>Tiene el derecho fundamental de ser representado por un abogado. Al contratarme, trabajaré para comprender completamente su caso, presentar defensas sólidas, y asegurarme de que sus derechos sean protegidos durante todo el proceso legal.</p>
+  </div>
+</div>
+</div>
+</section>
+
+
+<!-- Estilos generales para la sección 'Preguntas Frecuentes' -->
+<style>
+#faq {
+background-color: #0f407c;
+color: #ffffff;
+}
+
+/* Estilos para preguntas y respuestas */
+.faq-container {
+display: flex;
+flex-direction: column;
+}
+
+.faq-item {
+margin-bottom: 20px;
+background-color: #ffffff; /* Fondo blanco alrededor de cada pregunta */
+padding: 10px; /* Espaciado interno para mejorar la apariencia */
+border-radius: 8px; /* Bordes redondeados */
+box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* Sombra para destacar */
+}
+
+.question {
+display: flex;
+justify-content: space-between;
+align-items: center;
+cursor: pointer;
+}
+
+.question h3 {
+margin-bottom: 10px;
+color: rgb(0, 0, 0); /* Color de texto negro para las preguntas */
+}
+
+.toggle-btn {
+background-color: rgb(255, 255, 255);
+color: #005ce6;
+text-align: center;
+line-height: 20px;
+font-weight: bold;
+width: 20px;
+height: 20px;
+border-radius: 50%;
+}
+
+.answer {
+display: none;
+color: rgb(0, 0, 0); /* Color de texto negro para las respuestas */
+}
+
+/* Estilos cuando la pregunta o respuesta está abierta */
+.question.open .toggle-btn::after {
+content: "+";
+}
+
+.answer.open .toggle-btn::after {
+content: "-";
+}
+
+.question.open + .answer,
+.answer.open {
+display: block;
+}
+</style>
+
+
+<!-- Sección Contacto -->
+
+<section id="contacto">
+<h2>Contacto</h2>
+<p>¿Preparado para mejorar tu situación legal? Completa el formulario a continuación para agendar tu consulta.</p>
+
+<div class="contacto-content">
+    <form id="formulario-contacto">
+        <!-- Agrega campos de formulario según sea necesario -->
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="email">Correo Electrónico:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" required></textarea>
+
+        <button type="submit">Enviar Mensaje</button>
+    </form>
+    <div class="redes-sociales">
+      <p>Redes sociales:</p>
+      <!-- Agrega enlaces a tus redes sociales -->
+      <a href="https://www.facebook.com/profile.php?id=61555856721912" target="_blank">Facebook</a>
+      <a href="" target=" target="_blank>Instagram</a>
+  </div>
+</div>
+
+<!-- Botón de WhatsApp -->
+<div class="whatsapp-button">
+  <p>¡Contáctame por WhatsApp!</p>
+  <a href="https://wa.me/+584149697456" target="_blank" class="whatsapp-link">Contactar por WhatsApp</a>
+</div>
+</section>
+
+
+</main>
+
+<!-- Pie de página -->
+<footer>
+<p>© 2024 Luis Montenegro. Todos los derechos reservados.</p>
+</footer>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  var menuToggle = document.querySelector('.menu-toggle');
+  var navList = document.querySelector('nav ul');
+
+  menuToggle.addEventListener('click', function () {
+    // Toggle (agrega o quita) la clase 'active' al botón de menú
+    this.classList.toggle('active');
+  });
+});
+</script>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    // Obtener todas las imágenes del carrusel
+    const images = document.querySelectorAll('.carousel-image');
+
+    // Índice de la imagen actual
+    let currentIndex = 0;
+
+    // Función para mostrar la siguiente imagen en el carrusel
+    function showNextImage() {
+      images[currentIndex].classList.remove('active');
+      currentIndex = (currentIndex + 1) % images.length;
+      images[currentIndex].classList.add('active');
+    }
+
+    // Intervalo para cambiar de imagen cada 3 segundos
+    setInterval(showNextImage, 3000);
+  });
+</script>
+
+<!-- Script para manejar el clic en las preguntas y respuestas -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+var questions = document.querySelectorAll('.question');
+
+questions.forEach(function (question) {
+  question.addEventListener('click', function () {
+    // Abre o cierra la pregunta actual
+    question.classList.toggle('open');
+    
+    // Cierra la respuesta asociada si está abierta
+    var answer = question.nextElementSibling;
+    if (answer && answer.classList.contains('open')) {
+      answer.classList.remove('open');
+    }
+  });
+});
+});
+</script>
+
+<!-- Script para el menú de navegación -->
+<script>
+function toggleMenu() {
+var mobileMenu = document.querySelector('.mobile-menu');
+mobileMenu.style.left = (mobileMenu.style.left === '0px' || mobileMenu.style.left === '') ? '-250px' : '0px';
+}
+</script>
+
+
+</body>
+
+</html>
